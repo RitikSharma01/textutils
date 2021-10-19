@@ -54,10 +54,10 @@ function App() {
       <Navbar homeText="Home" aboutText="About TextUtils" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
 
-      <div className="container">
+      <div className="container" >
         <Switch>
           <Route exact path="/about">
-            <About />
+            <About mode={mode} />
           </Route>
 
           <Route exact path="/">
